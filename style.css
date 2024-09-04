@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    width: 300px;
+    background: rgb(8, 8, 8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+.sidebar-nav{
+    background: black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.sidebar-nav ul{
+    list-style: none;
+}
+.sidebar-nav ul li{
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a :hover{
+    color: white;
+}
+.sidebar-nav ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+}
+.sidebar-nav ul li a i{
+   font-size: 20px;
+   margin-right: 10px;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.create-playlist{
+    background: #302f2f;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.create-playlist h4{
+    color: white;
+    font-size: 15px;
+}
+.create-playlist p{
+    color: white;
+    font-size: 12px;
+    margin: 12px 0;
+}
+.create-playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.privacy ul li a{
+    text-decoration: none;
+    color: #4b4747;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0 6px;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: #dbdada;
+}
+.privacy ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.privacy ul li{
+    padding: 0 12px;
+    padding-bottom: 6px;
+}
+.eng-btn{
+    padding: 20px 30px;
+}
+.eng-btn button{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.eng-btn button:hover{
+    padding: 11px 31px;
+    border: 1px solid white;
+}
+.main-section{
+    margin-left: 300px;
+    background: black;
+    height: 100vh;
+}
+.main-section .top-nav{
+    padding: 20px 30px;
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-section .top-nav button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.main-section .top-nav .prev-btn button i{
+   color: rgb(194, 191, 191);
+   font-size: 22px;
+   margin-right: 20px;
+}
+.top-nav .login-btn .sign-up{
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+.top-nav .login-btn .sign-up:hover{
+    color: white;
+   
+}
+.top-nav .login-btn .login{
+    color: #242323;
+    font-size: 16px;
+    font-weight: 600;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.top-nav .login-btn .login:hover{
+    background: #f3f3f3;
+}
+.spotify-playlist{
+    padding: 20px 40px;
+}
+.spotify-playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width: 190px;
+    min-width: 140px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+    color: white;
+}
+.spotify-playlist .card .item:hover{
+    background-color: #252525;
+}
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotify-playlist .item h4{
+    color: white;
+}
+.spotify-playlist .item p{
+    color: rgb(180, 175, 175);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.spotify-playlist .item p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .play-btn{
+    position: relative;
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background: rgb(15, 94, 15);
+    border-radius: 50%;
+    padding: 10px;
+    right: 8px;
+    top: -40px;
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
